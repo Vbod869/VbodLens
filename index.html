@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VbodLens | Seacrh-Image</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>VbodLens</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for images...">
+            <button id="search-button">Search</button>
+        </div>
+        <div id="image-grid" class="image-grid"></div>
+        <div id="loading" class="loading">Loading...</div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button class="close-button">&times;</button>
+            <img id="modal-image" src="" alt="Image Details">
+            <p id="modal-description"></p>
+            <a id="download-button" href="${image.links.download}" target="_blank" download="image" class="download-button">Download Image</a>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
